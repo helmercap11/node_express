@@ -1,11 +1,32 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title><%= title %></title>
+    <title>Express</title>
     <link rel='stylesheet' href='/stylesheets/style.css' />
   </head>
   <body>
-    <h1><%= title %></h1>
-    <p>Welcome to <%= title %></p>
+    <h1>Listagem de Clientes</h1>
+    <p>Clientes já cadastrados no sistema.</p>
+    <table>
+      <thead>
+        <tr style="background-color: #CCC">
+          <td style="width:50%">Nome</td>
+          <td style="width: 15%">Idade</td>
+          <td style="width: 15%">Endereço</td>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td colspan="4">Nenhum Clientes cadastrado</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <td colspan="4">
+            <a href="/cliente">Cadastrar Novo Cliente</a>
+          </td>
+        </tr>
+      </tfoot>
+    </table>
   </body>
 </html>

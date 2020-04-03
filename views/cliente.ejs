@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Clientes</title>
+        <link  rel="stylesheet" href=""/>
+    </head>
+    <body>
+        <h1><%= title %></h1>
+        <p>Prencha os dados abaixo para salvar o Clientes.</p>
+        <form action="/cliente" method="POST">
+            <p>
+                <label>Nome: <input type="text" name="nome"/></label>
+            </p>
+            <p>
+                <label>Idade:<input type="number" name="idade"/></label>
+            </p>
+            <p>
+                <label> Endereço:<input type="text" name="endereço"/></label>
+            </p>
+            <p>
+               <a href="/"> Cancelar</a> | <input type="submit" value="Salvar"/>
+            </p>
+        </form>
+    </body>
+</html>
